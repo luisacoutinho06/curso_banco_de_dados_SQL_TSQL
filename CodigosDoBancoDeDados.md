@@ -39,15 +39,15 @@
 >Abaixo estamos informando o nome da coluna, depois o tipo, que no caso é caracteres e quantidade limite de caracteres que são 11:
 
 ` [CPF] [CHAR] (11),`
-<br>` [NOME] [VARCHAR] (150),`
-<br>` [RUA] [VARCHAR] (150),`
-<br>` [COMPLEMENTO] [VARCHAR] (150),`
-<br>` [BAIRRO] [VARCHAR] (150),`
-<br>` [ESTADO] [CHAR] (2),`
-<br>` [CEP] [CHAR] (8),`
-<br>` [DATA DE NASCIMENTO] [DATE],`
-<br>` [IDADE] [SMALLINT],`
-<br>` [SEXO] [CHAR] (1),`
+<br>`[NOME] [VARCHAR] (150),`
+<br>`[RUA] [VARCHAR] (150),`
+<br>`[COMPLEMENTO] [VARCHAR] (150),`
+<br>`[BAIRRO] [VARCHAR] (150),`
+<br>`[ESTADO] [CHAR] (2),`
+<br>`[CEP] [CHAR] (8),`
+<br>`[DATA DE NASCIMENTO] [DATE],`
+<br>`[IDADE] [SMALLINT],`
+<br>`[SEXO] [CHAR] (1),`
 <br>`[LIMITE DE CREDITO] [MONEY],`
 <br>`[VOLUME MINIMO] [FLOAT],`
 <br>`[PRIMEIRA COMPRA] [BIT]`
@@ -60,3 +60,4 @@
 ><br>**O tipo de dado `SMALLINT`** - é um tipo de dado numérico inteiro que pode armazenar valores inteiros pequenos, mínimo –32,767 e máximo 32,767. 
 ><br>**O tipo de dado `MONEY`** - é usado para guardar valores monetários com precisão fixa, sem pensar em arredondamento.
 ><br>**O tipo de dado `FLOAT`** - é um tipo de dado que permite o registro de casas decimais.
+><br>**O tipo de dado `BIT`** - é um tipo de valor lógico booleano, ou seja apenas true ou false, 0 ou 1.
