@@ -44,7 +44,19 @@
 <br>` [COMPLEMENTO] [VARCHAR] (150),`
 <br>` [BAIRRO] [VARCHAR] (150),`
 <br>` [ESTADO] [CHAR] (2),`
-<br>` [CEP] [CHAR] (8)`
+<br>` [CEP] [CHAR] (8),`
+<br>` [DATA DE NASCIMENTO] [DATE],`
+<br>` [IDADE] [SMALLINT],`
+<br>` [SEXO] [CHAR] (1),`
+<br>`[LIMITE DE CREDITO] [MONEY],`
+<br>`[VOLUME MINIMO] [FLOAT],`
+<br>`[PRIMEIRA COMPRA] [BIT]`
 <br>`)`
 
->Existem vários tipos de dados em uma coluna, e dois deles são o `CHAR` e o `VARCHAR`, a diferença entre ambos é o fato de que o `CHAR (Character Fixed-Length)` que armazena strings de comprimento fixo e o `VARCHAR (Variable Character Length)` que armazena strings de comprimento variável. <br> Por exemplo, se você tiver uma coluna para armazenar nomes de pessoas e quiser economizar espaço, poderá usar VARCHAR, pois os nomes podem variar muito em comprimento. Por outro lado, se você estiver armazenando códigos de estado com sempre dois caracteres, pode ser mais apropriado usar CHAR para garantir o tamanho fixo e previsível do armazenamento.
+>Existem vários tipos de dados em uma coluna, e dois deles são o `CHAR` e o `VARCHAR`, a diferença entre ambos é o fato de que o `CHAR (Character Fixed-Length)` que armazena strings de comprimento fixo e o `VARCHAR (Variable Character Length)` que armazena strings de comprimento variável. 
+<br> Por exemplo, se você tiver uma coluna para armazenar nomes de pessoas e quiser economizar espaço, poderá usar `VARCHAR`, pois os nomes podem variar muito em comprimento. Por outro lado, se você estiver armazenando códigos de estado com sempre dois caracteres, pode ser mais apropriado usar `CHAR` para garantir o tamanho fixo e previsível do armazenamento.
+
+><br>**O tipo de dados `DATE`** - armazena valores de data no formato "AAAA-MM-DD" (ano-mês-dia).
+><br>**O tipo de dado `SMALLINT`** - é um tipo de dado numérico inteiro que pode armazenar valores inteiros pequenos, mínimo –32,767 e máximo 32,767. 
+><br>**O tipo de dado `MONEY`** - é usado para guardar valores monetários com precisão fixa, sem pensar em arredondamento.
+><br>**O tipo de dado `FLOAT`** - é um tipo de dado que permite o registro de casas decimais.
