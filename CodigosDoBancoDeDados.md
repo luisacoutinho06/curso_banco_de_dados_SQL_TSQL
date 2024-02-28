@@ -22,6 +22,8 @@
 ***1.2 - Para realizarmos a exclusão do banco de dados, usamos o seguinte comando:***
 <br> `DROP DATABASE SUCOS_VENDAS_2;`
 <br>
-<br> `DROP` -> Este comando excluí permanentemente os objetos e os dados relacionados, o que significa que não há como desfazer essa ação.
+<br> `DROP` -> Este comando exclui permanentemente os objetos e os dados relacionados, o que significa que não há como desfazer essa ação.
 
+***2 - Para realizarmos o comentário em dentro da consulta do SQL, usamos o seguinte comando:***
+<br> `/* */`
 
