@@ -88,7 +88,13 @@
 | **DATAS**  	   | Datas, dias, mês, anos.        | Calendário lunar, calendário comercial | DATE AAAA-MM-DD, SMALLDATE, DATETIMEOFFSET |
 |                  | Tempo	                    | 10:59:13 é tipo TIME  | TIME, DATETIME |
 
+***4 - Alterando dados de uma tabela, usando o comando:***
+<br> `ALTER TABLE [TABELA DE CLIENTES]`
 
+***4 - Alterando a coluna de uma tabela, usando o comando:***
+>Estamos setando no código abaixo a coluna que queremos alterar `[CPF]`, o tipo de dado que ela terá, a quantidade de caracteres e usamos para restringir o `NOT NULL`, para que não aceite dados nulos.
+
+<br> `ALTER TABLE [TABELA DE CLIENTES] ALTER COLUMN [CPF] [CHAR] (11) NOT NULL;`
 
 
 
