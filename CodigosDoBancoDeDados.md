@@ -77,15 +77,15 @@
 <br>`[PRECO DE LISTA] [SMALLMONEY]`
 <br>`)`
 
-| Categoria        |                 Descrição                           | Exemplo                                  |               Comando           |
+| **CATEGORIA**  |            **DESCRIÇÃO**                       | **EXEMPLO**                   |               **COMANDO**           |
 |------------------|-----------------------------------------------------|------------------------------------------|---------------------------------|
-| Numéricos Exatos | Números de vários tamanhos que podem ser formatados | 9.78 pode ser definida como DECIMAL(3,2) | BIGINT, INT, SMALLINT, TINYINT, DECIMAL(i,j), NUMERIC(i,j) |
-| Unidade Monetária | Valores que representam dinheiro | 685477.58 é saldo da conta bancária definida do tipo MONEY | MONEY, SMALLMONEY |
-| Numéricos Aproximados | Números de ponto flutuante com precisão | 7.90 é do tipo FLOAT | FLOAT ou REAL |
-| Cadeias de Caracteres | Textos de tamanhos fixos  | “modelagem” se encaixa em VARCHAR(9) | CHAR(n) |
+| **NÚMERICOS EXATOS** | Números de vários tamanhos que podem ser formatados | 9.78 pode ser definida como DECIMAL(3,2) | BIGINT, INT, SMALLINT, TINYINT, DECIMAL(i,j), NUMERIC(i,j) |
+| **UNIDADE MONETÁRIA** | Valores que representam dinheiro | 685477.58 é saldo da conta bancária definida do tipo MONEY | MONEY, SMALLMONEY |
+| **NÚMERICOS APROXIMADOS** | Números de ponto flutuante com precisão | 7.90 é do tipo FLOAT | FLOAT ou REAL |
+| **CADEIAS DE CARACTERES** | Textos de tamanhos fixos  | “modelagem” se encaixa em VARCHAR(9) | CHAR(n) |
 |                       | Texto de tamanho variável |           | VARCHAR(n) |
-| Valores Lógicos  |Termos que representa verdadeiro ou falso |          | BIT |
-| Datas  	   | Datas, dias, mês, anos.        | Calendário lunar, calendário comercial | DATE AAAA-MM-DD, SMALLDATE, DATETIMEOFFSET |
+| **VALORES LÓGICOS**  |Termos que representa verdadeiro ou falso |          | BIT |
+| **DATAS**  	   | Datas, dias, mês, anos.        | Calendário lunar, calendário comercial | DATE AAAA-MM-DD, SMALLDATE, DATETIMEOFFSET |
 |                  | Tempo	                    | 10:59:13 é tipo TIME  | TIME, DATETIME |
 
 
