@@ -91,10 +91,19 @@
 ***4 - Alterando dados de uma tabela, usando o comando:***
 <br> `ALTER TABLE [TABELA DE CLIENTES]`
 
-***4 - Alterando a coluna de uma tabela, usando o comando:***
+***4.1 - Alterando a coluna de uma tabela, usando o comando:***
 >Estamos setando no código abaixo a coluna que queremos alterar `[CPF]`, o tipo de dado que ela terá, a quantidade de caracteres e usamos para restringir o `NOT NULL`, para que não aceite dados nulos.
 
 <br> `ALTER TABLE [TABELA DE CLIENTES] ALTER COLUMN [CPF] [CHAR] (11) NOT NULL;`
+
+***4.1 - Inserindo uma chave primária a uma coluna que já existe:***
+>Estamos setando no código abaixo uma restrição de chave primária à tabela chamada `[TABELA DE CLIENTES]`. <br>
+
+>`ADD CONSTRAINT PK_TABELA_CLIENTE` - Isso adiciona uma nova restrição à tabela. `PK_TABELA_CLIENTE` é o nome dado à restrição de chave primária. `PK` geralmente é usado como prefixo para indicar uma chave primária.<br>
+
+>`ADD CONSTRAINT PK_TABELA_CLIENTE` - Define a coluna `[CPF]` como a chave primária da tabela. `PRIMARY KEY` indica que esta restrição é uma chave primária. `CLUSTERED` indica que o índice criado para a chave primária será organizado de forma a agrupar fisicamente os registros semelhantes no disco, o que pode melhorar o desempenho em algumas consultas. `[CPF]` é o nome da coluna que será a chave primária.<br>
+
+`ALTER TABLE [TABELA DE CLIENTES] ADD CONSTRAINT PK_TABELA_CLIENTE PRIMARY KEY CLUSTERED ([CPF]);`
 
 
 
