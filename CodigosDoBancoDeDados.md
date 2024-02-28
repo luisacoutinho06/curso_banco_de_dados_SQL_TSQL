@@ -18,3 +18,10 @@
 >A **taxa de crescimento** funciona da seguinte maneira: o banco inicia com 10MB. Quando passa desse valor, ganha mais 5MB, o que não significa
 >que tenha esse valor em dados, mas sim uma área reservada. Quando essa área reservada for preenchida e chegar em 15, ele recebe mais 5, somando 20.
 > Assim os valores são sucessivamente adquiridos até atingir os 50MB definidos como tamanho máximo.
+
+***1.2 - Para realizarmos a exclusão do banco de dados, usamos o seguinte comando:***
+<br> `DROP DATABASE SUCOS_VENDAS_2;`
+<br>
+<br> `DROP` -> Este comando excluí permanentemente os objetos e os dados relacionados, o que significa que não há como desfazer essa ação.
+
+
