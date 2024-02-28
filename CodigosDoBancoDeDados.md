@@ -59,5 +59,48 @@
 ><br>**O tipo de dados `DATE`** - armazena valores de data no formato "AAAA-MM-DD" (ano-mês-dia).
 ><br>**O tipo de dado `SMALLINT`** - é um tipo de dado numérico inteiro que pode armazenar valores inteiros pequenos, mínimo –32,767 e máximo 32,767. 
 ><br>**O tipo de dado `MONEY`** - é usado para guardar valores monetários com precisão fixa, sem pensar em arredondamento.
+><br>**O tipo de dado `SMALLMONEY`** - é usado para guardar valores monetários com precisão fixa, sem pensar em arredondamento, porém ele reduz o provisionamento de armazenamento de memória, e ele não requer uma tamanho máximo.
 ><br>**O tipo de dado `FLOAT`** - é um tipo de dado que permite o registro de casas decimais.
 ><br>**O tipo de dado `BIT`** - é um tipo de valor lógico booleano, ou seja apenas true ou false, 0 ou 1.
+
+***3 - Criando chaves primárias:***
+<br> `CREATE TABLE [TABELA DE PRODUTOS](`
+
+>Estamos setando no código abaixo a `PRIMARY KEY` que quer dizer que o campo será indentificado de forma unica, e o `NOT NULL` porque é obrigatório inserir o código, não pode ser inserido valores nulos:
+
+` [CODIGO DO PRODUTO] [VARCHAR] (20) NOT NULL PRIMARY KEY,`
+<br>`[PRIMEIRA COMPRA] [BIT]`
+<br>`[NOME DO PRODUTO] [VARCHAR] (50),`
+<br>`[EMBALAGEM] [VARCHAR] (50),`
+<br>`[TAMANHO] [VARCHAR] (50),`
+<br>`[SABOR] [VARCHAR] (50),`
+<br>`[PRECO DE LISTA] [SMALLMONEY]`
+<br>`)`
+
+| Categoria        |                 Descrição                           | Exemplo                                  |               Comando           |
+|------------------|-----------------------------------------------------|------------------------------------------|---------------------------------|
+| Numéricos Exatos | Números de vários tamanhos que podem ser formatados | 9.78 pode ser definida como DECIMAL(3,2) | BIGINT, INT, SMALLINT, TINYINT, DECIMAL(i,j), NUMERIC(i,j) |
+| Unidade Monetária | Valores que representam dinheiro | 685477.58 é saldo da conta bancária definida do tipo MONEY | MONEY, SMALLMONEY |
+| Numéricos Aproximados | Números de ponto flutuante com precisão | 7.90 é do tipo FLOAT | FLOAT ou REAL |
+| Cadeias de Caracteres | Textos de tamanhos fixos  | “modelagem” se encaixa em VARCHAR(9) | CHAR(n) |
+|                       | Texto de tamanho variável |           | VARCHAR(n) |
+| Valores Lógicos  |Termos que representa verdadeiro ou falso |          | BIT |
+| Datas  	   | Datas, dias, mês, anos.        | Calendário lunar, calendário comercial | DATE AAAA-MM-DD, SMALLDATE, DATETIMEOFFSET |
+|                  | Tempo	                    | 10:59:13 é tipo TIME  | TIME, DATETIME |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
