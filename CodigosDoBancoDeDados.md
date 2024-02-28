@@ -38,8 +38,13 @@
 
 >Abaixo estamos informando o nome da coluna, depois o tipo, que no caso é caracteres e quantidade limite de caracteres que são 11:
 
-`[CPF] [CHAR] (11)`
-<br>`[NOME] [VARCHAR] (150)`
+` [CPF] [CHAR] (11),`
+<br>` [NOME] [VARCHAR] (150),`
+<br>` [RUA] [VARCHAR] (150),`
+<br>` [COMPLEMENTO] [VARCHAR] (150),`
+<br>` [BAIRRO] [VARCHAR] (150),`
+<br>` [ESTADO] [CHAR] (2),`
+<br>` [CEP] [CHAR] (8)`
 <br>`)`
 
 >Existem vários tipos de dados em uma coluna, e dois deles são o `CHAR` e o `VARCHAR`, a diferença entre ambos é o fato de que o `CHAR (Character Fixed-Length)` que armazena strings de comprimento fixo e o `VARCHAR (Variable Character Length)` que armazena strings de comprimento variável. <br> Por exemplo, se você tiver uma coluna para armazenar nomes de pessoas e quiser economizar espaço, poderá usar VARCHAR, pois os nomes podem variar muito em comprimento. Por outro lado, se você estiver armazenando códigos de estado com sempre dois caracteres, pode ser mais apropriado usar CHAR para garantir o tamanho fixo e previsível do armazenamento.
