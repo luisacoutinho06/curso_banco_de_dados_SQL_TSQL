@@ -197,7 +197,7 @@ Para realizarmos a seleção de dados específicos, precisamos alterar os asteri
 
 `UPDATE [TABELA DE PRODUTOS] SET [PRECO DE LISTA] = [PRECO DE LISTA] * 0.9 WHERE [EMBALAGEM] = 'Lata';`
 
-***11 - Deletando dados, usando 'DELETE':***
+***12 - Deletando dados, usando 'DELETE':***
 >Com este código `DELETE` apagamos os dados ou a tabela, e o `FROM ` é para definir onde queremos realizar isso. <br>
 
 `DELETE FROM [TABELA DE PRODUTOS] WHERE [CODIGO DO PRODUTO] = '1004327';`
