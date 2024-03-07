@@ -38,7 +38,7 @@
 
 >Abaixo estamos informando o nome da coluna, depois o tipo, que no caso é caracteres e quantidade limite de caracteres que são 11:
 
-` [CPF] [CHAR] (11),`
+`[CPF] [CHAR] (11),`
 <br>`[NOME] [VARCHAR] (150),`
 <br>`[RUA] [VARCHAR] (150),`
 <br>`[COMPLEMENTO] [VARCHAR] (150),`
@@ -68,7 +68,7 @@
 
 >Estamos setando no código abaixo a `PRIMARY KEY` que quer dizer que o campo será indentificado de forma unica, e o `NOT NULL` porque é obrigatório inserir o código, não pode ser inserido valores nulos:
 
-` [CODIGO DO PRODUTO] [VARCHAR] (20) NOT NULL PRIMARY KEY,`
+`[CODIGO DO PRODUTO] [VARCHAR] (20) NOT NULL PRIMARY KEY,`
 <br>`[PRIMEIRA COMPRA] [BIT]`
 <br>`[NOME DO PRODUTO] [VARCHAR] (50),`
 <br>`[EMBALAGEM] [VARCHAR] (50),`
@@ -77,13 +77,13 @@
 <br>`[PRECO DE LISTA] [SMALLMONEY]`
 <br>`)`
 
-| **CATEGORIA**  |            **DESCRIÇÃO**                       | **EXEMPLO**                   |               **COMANDO**           |
+| **CATEGORIA**  |            **DESCRIÇÃO**                       | **EXEMPLO**                                     |              **COMANDO**        |
 |------------------|-----------------------------------------------------|------------------------------------------|---------------------------------|
-| **NÚMERICOS EXATOS** | Números de vários tamanhos que podem ser formatados | 9.78 pode ser definida como DECIMAL(3,2) | BIGINT, INT, SMALLINT, TINYINT, DECIMAL(i,j), NUMERIC(i,j) |
-| **UNIDADE MONETÁRIA** | Valores que representam dinheiro | 685477.58 é saldo da conta bancária definida do tipo MONEY | MONEY, SMALLMONEY |
+| **NÚMERICOS EXATOS**      | Números de vários tamanhos que podem ser formatados | 9.78 pode ser definida como DECIMAL(3,2) | BIGINT, INT, SMALLINT, TINYINT, DECIMAL(i,j), NUMERIC(i,j) |
+| **UNIDADE MONETÁRIA**     | Valores que representam dinheiro | 685477.58 é saldo da conta bancária definida do tipo MONEY | MONEY, SMALLMONEY |
 | **NÚMERICOS APROXIMADOS** | Números de ponto flutuante com precisão | 7.90 é do tipo FLOAT | FLOAT ou REAL |
 | **CADEIAS DE CARACTERES** | Textos de tamanhos fixos  | “modelagem” se encaixa em VARCHAR(9) | CHAR(n) |
-|                       | Texto de tamanho variável |           | VARCHAR(n) |
+|                           | Texto de tamanho variável |           | VARCHAR(n) |
 | **VALORES LÓGICOS**  |Termos que representa verdadeiro ou falso |          | BIT |
 | **DATAS**  	   | Datas, dias, mês, anos.        | Calendário lunar, calendário comercial | DATE AAAA-MM-DD, SMALLDATE, DATETIMEOFFSET |
 |                  | Tempo	                    | 10:59:13 é tipo TIME  | TIME, DATETIME |
@@ -96,7 +96,7 @@
 
 <br> `ALTER TABLE [TABELA DE CLIENTES] ALTER COLUMN [CPF] [CHAR] (11) NOT NULL;`
 
-***4.1 - Inserindo uma chave primária a uma coluna que já existe:***
+***4.2 - Inserindo uma chave primária a uma coluna que já existe:***
 >Estamos setando no código abaixo uma restrição de chave primária à tabela chamada `[TABELA DE CLIENTES]`. <br>
 
 >`ADD CONSTRAINT PK_TABELA_CLIENTE` - Isso adiciona uma nova restrição à tabela. `PK_TABELA_CLIENTE` é o nome dado à restrição de chave primária. `PK` geralmente é usado como prefixo para indicar uma chave primária.<br>
@@ -105,12 +105,32 @@
 
 `ALTER TABLE [TABELA DE CLIENTES] ADD CONSTRAINT PK_TABELA_CLIENTE PRIMARY KEY CLUSTERED ([CPF]);`
 
+***5 - Inserindo uma informação na tabela com o comando 'INSERT INTO':***
+>Com este código `INSERT INTO` estamos inserindo informações à tabela chamada `[TABELA DE CLIENTES]` e usando o `VALUES()` setamos os valores que queremos inserir dentro, exemplo no código abaixo. <br>
 
+<br>`INSERT INTO [TABELA DE PRODUTOS] VALUES (`
+Os valores que estamos inserindo devem seguir a ordem da tabela:
+<br>`'1040107'`
+<br>`'Light 350 ml - Melancia'`
+<br>`'Lata'`
+<br>`'350 ml'`
+<br>`'Melancia'`
+<br>`4.56`
+<br>`)`
 
+***5.1 - Inserindo várias informações na tabela com o comando 'INSERT INTO':***
+>Com este código `INSERT INTO` estamos inserindo informações à tabela chamada `[TABELA DE CLIENTES]` e usando o `VALUES()` setamos os valores que queremos inserir dentro do parênteses, exemplo no código abaixo. <br>
 
+<br>`INSERT INTO [TABELA DE PRODUTOS] VALUES`
+<br>`('10837797', 'Clean - 2 Litros - Laranja', 'PET', '2 Litros', 'Laranja', 16.01),`
+<br>`(1000889, Sabor da Montanha 700 ml Uva', 'Garrafa', 700 ml, 'Uva', 6.31),`
+<br>`('1004327', Videira do Campo 1,5 Litros Melancia', 'PET', '1,5 Litros', 'Melancia', 19.51),`
+<br>`('1088126', 'Linha Citrus 1 Litro Limão', 'PET', '1 Litro', 'Limão', 7.00);`
 
-
-
+Outro exemplo:
+<br>`INSERT INTO [TABELA DE CLIENTES] VALUES`
+<br>`('00384393431', 'João da Silva', 'Rua Projetada A', 'Número 233', 'Copacabana', 'RJ', '20000000', '1965-03-21', 57, 'M', 20000000, 3000.30, 1),`
+<br>`('00384393555', 'Maria Clara', 'Rua Projetada A', 'Número 233', 'Copacabana', 'RJ', '20000000', '1975-03-21',47, 'F', 200000, 3000.30, 0);`
 
 
 
