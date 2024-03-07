@@ -167,4 +167,41 @@ Para realizarmos a seleção de dados específicos, precisamos alterar os asteri
 >Com este código `WHERE` trazemos uma lista de dados, porém especificando algo daqueles dados. <br>
 
 <br>`SELECT nome_do_cliente, primeira_compra FROM clientes WHERE [PRIMEIRA COMPRA] = 1;`
+<br>`SELECT * FROM [TABELA DE PRODUTOS] WHERE [PRECO DE LISTA] = 7.00;`
+<br>`SELECT * FROM [TABELA DE PRODUTOS] WHERE [PRECO DE LISTA] <= 7.00;`
+
+>A partir do uso da cláusula WHERE, conseguimos estabelecer condições específicas usando os operadores em uma coluna numérica. <br>
+
+>Ao realizarmos uma consulta onde inserimos um texto, ocorrerá a seguinte situação: Na **TABELA ASCII**, que codifica letras para números. Dessa forma, teríamos uma codificação para o alfabeto, onde 'B' é maior que 'A', 'C' é maior que 'B' e assim sucessivamente. PET começa com 'P' e, portanto, é maior que 'lata', que começa com 'L', na escala alfabética. Por isso, apareceram apenas os sucos de embalagem PET, que na escala alfabética são maiores que a lata.
+
+<br>`SELECT * FROM [TABELA DE PRODUTOS] WHERE [EMBALAGEM] > 'Lata';`
+
+>OBS: Quando trabalhamos com datas, temos funções específicas que podemos usar, como `YEAR()`, que extrai o ano, `MONTH()`, que extrai o mês, e `DAY()`, que extrai o dia.
+
+![IMG1](https://github.com/luisacoutinho06/aprendendoBancoDeDados/blob/main/img1.png)
+<br>
+<br>
+![IMG2](https://github.com/luisacoutinho06/aprendendoBancoDeDados/blob/main/img2.png)
+
+***10 - Consultando uma lista de dados filtrada com condições combinadas, usando 'WHERE':***
+>Com este código `WHERE` trazemos uma lista de dados, e usando o `OR` queremos que os filtros trazidos tenham a condição de um ou de outro da mesma coluna. <br>
+
+`SELECT [NOME], [BAIRRO] FROM [TABELA DE CLIENTES] WHERE [BAIRRO] = 'Copacabana' OR [BAIRRO] = 'Tijuca';`
+
+>Com este código `WHERE` trazemos uma lista de dados, e usando o `AND` queremos que as condições sejam unidas e retorne o filtro. <br>
+
+`SELECT [NOME], [ESTADO], [PRIMEIRA COMPRA] FROM [TABELA DE CLIENTES] WHERE [PRIMEIRA COMPRA] = '1' AND [ESTADO] = 'SP';`
+
+***11 - Alterando dados, usando 'UPDATE':***
+>Com este código `UPDATE` alteramos os dados, o `SET` é para definir qual alteração irei realizar. <br>
+
+`UPDATE [TABELA DE PRODUTOS] SET [PRECO DE LISTA] = [PRECO DE LISTA] * 0.9 WHERE [EMBALAGEM] = 'Lata';`
+
+***11 - Deletando dados, usando 'DELETE':***
+>Com este código `DELETE` apagamos os dados ou a tabela, e o `FROM ` é para definir onde queremos realizar isso. <br>
+
+`DELETE FROM [TABELA DE PRODUTOS] WHERE [CODIGO DO PRODUTO] = '1004327';`
+
+
+
 
