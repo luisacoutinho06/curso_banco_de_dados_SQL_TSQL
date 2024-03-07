@@ -159,6 +159,12 @@ Para realizarmos a seleção de dados específicos, precisamos alterar os asteri
 <br>`SELECT [NOME] AS [NOME DO CLIENTE], [CPF], [ESTADO] FROM [TABELA DE CLIENTES];`
 
 ***8 - Consultando uma lista de dados sem repetir caso sejam iguais:***
->Com este código `DISTINCT ` trazemos uma lista de valores unicos. Queremos todos os sabores disponíveis, sem repetir. <br>
+>Com este código `DISTINCT` trazemos uma lista de valores unicos. Queremos todos os sabores disponíveis, sem repetir. <br>
 
 <br>`SELECT DISTINCT [SABOR] FROM [TABELA DE PRODUTOS];`
+
+***9 - Consultando uma lista de dados filtrada, usando 'WHERE':***
+>Com este código `WHERE` trazemos uma lista de dados, porém especificando algo daqueles dados. <br>
+
+<br>`SELECT nome_do_cliente, primeira_compra FROM clientes WHERE [PRIMEIRA COMPRA] = 1;`
+
