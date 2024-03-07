@@ -132,10 +132,33 @@ Outro exemplo:
 <br>`('00384393431', 'João da Silva', 'Rua Projetada A', 'Número 233', 'Copacabana', 'RJ', '20000000', '1965-03-21', 57, 'M', 20000000, 3000.30, 1),`
 <br>`('00384393555', 'Maria Clara', 'Rua Projetada A', 'Número 233', 'Copacabana', 'RJ', '20000000', '1975-03-21',47, 'F', 200000, 3000.30, 0);`
 
+Exemplo para comparar o valor inserido e a coluna:
+<br>`INSERT INTO [TABELA DE PRODUTOS]`
+<br>`([CODIGO DO PRODUTO], [NOME DO PRODUTO], [EMBALAGEM], [TAMANHO], [PRECO DE LISTA], [SABOR])`
+<br>`VALUES`
+<br>`('5449310', 'Frescor do Verão - 350 ml - Limão', 'Lata', '350 ml',2.45, 'Limão'),`
+<br>`('1078680', 'Frescor do Verão - 350 ml - Manga', 'Lata', '350 ml',3.18, 'Manga');`
 
+***6 - Consultando dados e trazendo na tabela usando o 'SELECT * FROM':***
+>Com este código `SELECT * FROM` estamos querendo selecionar informações da tabela chamada `[TABELA DE PRODUTOS]` e o `*`  representa todas as linhas e colunas dessa tabela. <br>
 
+<br>`SELECT * FROM [TABELA DE PRODUTOS];`
 
+Para realizarmos a seleção de dados específicos, precisamos alterar os asteriscos para o nome da coluna que desejamos:
 
+<br>`SELECT [NOME], [ESTADO] FROM [TABELA DE PRODUTOS];`
 
+***7 - Consultando dados e trazendo os registros de acordo com a ordenação que desejamos, usando o 'ORDER BY':***
+>Com este código `ORDER BY` estamos querendo a tabela de clientes em ordem alfabética de nomes ou estados, a depender de nossa necessidade. <br>
 
+<br>`SELECT [ESTADO], [NOME] FROM [TABELA DE CLIENTES] ORDER BY [NOME];`
 
+***7.1 - Inserindo um apelido para esta coluna:***
+>Com este código `AS` estamos inserindo a coluna [NOME] que o apelido seja [NOME DO CLIENTE]. <br>
+
+<br>`SELECT [NOME] AS [NOME DO CLIENTE], [CPF], [ESTADO] FROM [TABELA DE CLIENTES];`
+
+***8 - Consultando uma lista de dados sem repetir caso sejam iguais:***
+>Com este código `DISTINCT ` trazemos uma lista de valores unicos. Queremos todos os sabores disponíveis, sem repetir. <br>
+
+<br>`SELECT DISTINCT [SABOR] FROM [TABELA DE PRODUTOS];`
