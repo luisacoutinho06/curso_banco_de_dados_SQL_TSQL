@@ -28,3 +28,7 @@ O objetivo dessa declaração de variáveis é o mesmo das demais linguagens de 
 > O tipo da variável pode ser qualquer um existente no SQL Server. Inclusive do tipo ***`TABELA`***;
 >
 > A atribuição do valor de uma variável pode ser efetuada através do comando ***`SET`*** ou através de um ***`SELECT`***.
+
+***Exemplo:***
+<br>
+![image](https://github.com/luisacoutinho06/curso_banco_de_dados_SQL_TSQL/assets/104804096/5c1589d4-cad1-42d1-b424-3e098995a88c)
