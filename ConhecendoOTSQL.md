@@ -31,4 +31,7 @@ O objetivo dessa declaração de variáveis é o mesmo das demais linguagens de 
 
 ***Exemplo de declaração de variável:***
 <br>
-![image](https://github.com/luisacoutinho06/curso_banco_de_dados_SQL_TSQL/assets/104804096/5c1589d4-cad1-42d1-b424-3e098995a88c)
+![image](https://github.com/luisacoutinho06/curso_banco_de_dados_SQL_TSQL/assets/104804096/65d4532d-2c0c-42de-8653-4352b2495874)
+<br>
+***Exemplo de atribuição a uma variável:***
+<br>
