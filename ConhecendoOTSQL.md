@@ -1,5 +1,6 @@
 ***1 - O que é o T-SQL?***
-<br><br>T-SQL significa **Transact SQL** e é o nome da linguagem interpretada usada pelo SQL Server. Inclusive, desde o primeiro treinamento de SQL Server, nós já utilizamos o 
+<br><br>
+T-SQL significa **Transact SQL** e é o nome da linguagem interpretada usada pelo SQL Server. Inclusive, desde o primeiro treinamento de SQL Server, nós já utilizamos o 
 T-SQL. Toda vez que vamos ao **Management Studio**, criamos uma nova consulta e digitamos um comando SQL padrão **ANSI**, este comando é um comando de **T-SQL**.
 
 Sendo assim, todo os comandos de `SELECT`, `INSERT`, `UPDATE`, `CREATE` e `DROP` é T-SQL, então o estamos praticando desde o início dessa formação.
@@ -13,3 +14,17 @@ O ***T-SQL*** padrão ***ANSI*** faz parte de um conjunto menor de todos os coma
 >***ANSI*** estão dentro de uma área maior que corresponde aos comandos de ***T-SQL***. No SQL Server, o ***SQL ANSI*** são comandos subconjuntos do T-SQL.
 
 >O padrão ANSI, que explicamos na introdução do SQL, é um padrão respeitado por todos os bancos de dados relacionais do mercado.
+
+<br>
+
+***2 - Declaração de variáveis***
+<br><br>
+O objetivo dessa declaração de variáveis é o mesmo das demais linguagens de programação. Ela é uma ***entidade*** na qual iremos ***atribuir um valor***, além disso, podemos utilizá-la nos comandos de ***T-SQL***, assim como modificar seus valores.
+
+`DECLARE <NOME DA VARIÁVEL> <TIPO DA VARIÁVEL>`
+
+> O nome da variável deve ser único e iniciar com ***`@`***;
+>
+> O tipo da variável pode ser qualquer um existente no SQL Server. Inclusive do tipo ***`TABELA`***;
+>
+> A atribuição do valor de uma variável pode ser efetuada através do comando ***`SET`*** ou através de um ***`SELECT`***.
