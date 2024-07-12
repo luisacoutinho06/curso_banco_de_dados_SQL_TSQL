@@ -35,3 +35,5 @@ O objetivo dessa declaração de variáveis é o mesmo das demais linguagens de 
 <br>
 ***Exemplo de atribuição a uma variável:***
 <br>
+![image](https://github.com/user-attachments/assets/12bf694d-65bd-4b36-a4fc-7126b32058dd)
+
