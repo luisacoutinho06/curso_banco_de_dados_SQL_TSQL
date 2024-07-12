@@ -30,10 +30,15 @@ O objetivo dessa declaração de variáveis é o mesmo das demais linguagens de 
 > A atribuição do valor de uma variável pode ser efetuada através do comando ***`SET`*** ou através de um ***`SELECT`***.
 
 ***Exemplo de declaração de variável:***
-<br>
+
 ![image](https://github.com/luisacoutinho06/curso_banco_de_dados_SQL_TSQL/assets/104804096/65d4532d-2c0c-42de-8653-4352b2495874)
-<br>
+
 ***Exemplo de atribuição a uma variável:***
-<br>
+
 ![image](https://github.com/user-attachments/assets/12bf694d-65bd-4b36-a4fc-7126b32058dd)
 
+***Exemplo de como imprimir na aba ***`MENSAGENS`*** os valores referentes as variáveis:***
+
+![image](https://github.com/user-attachments/assets/138c8877-835b-418a-bcf9-d67829cd6f1a)
+
+> O ***`PRINT`*** funciona como um orientador. Imprimir o valor das variáveis é muito útil em uma depuração, por exemplo, ou até mesmo para medir os valores conforme o programa é executado.
