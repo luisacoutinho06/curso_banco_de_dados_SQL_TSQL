@@ -43,7 +43,7 @@ O objetivo dessa declaração de variáveis é o mesmo das demais linguagens de 
 
 > O ***`PRINT`*** funciona como um orientador. Imprimir o valor das variáveis é muito útil em uma depuração, por exemplo, ou até mesmo para medir os valores conforme o programa é executado.
 
-***Usando a variável em um comando SQL:***
+***3 - Usando a variável em um comando SQL:***
 
 O que faremos, agora, é um comando de inserir um novo vendedor utilizando os valores das variáveis. Para isso, utilizamos o comando `INSERT INTO` com a tabela `[TABELA DE VENDEDORES]`. Em seguida, podemos declarar ou não os nomes das colunas, mas se não os declararmos, teremos que declarar os valores na ordem natural dessas colunas na tabela.
 <br>
@@ -83,3 +83,6 @@ O que faremos, agora, é um comando de inserir um novo vendedor utilizando os va
 >`(@MATRICULA, @NOME, @PERCENTUAL, @DATA, @FERIAS, @BAIRRO)`<br>
 ><br>
 >`PRINT 'UM VENDEDOR INCLUíDO.'`<br>
+
+***Atribuindo valores a variáveis através de um `SELECT`.***
+![image](https://github.com/user-attachments/assets/fa6e8ca7-8709-46ed-b739-72f3d1076f73)
