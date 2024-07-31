@@ -42,3 +42,44 @@ O objetivo dessa declaração de variáveis é o mesmo das demais linguagens de 
 ![image](https://github.com/user-attachments/assets/138c8877-835b-418a-bcf9-d67829cd6f1a)
 
 > O ***`PRINT`*** funciona como um orientador. Imprimir o valor das variáveis é muito útil em uma depuração, por exemplo, ou até mesmo para medir os valores conforme o programa é executado.
+
+***Usando a variável em um comando SQL:***
+
+O que faremos, agora, é um comando de inserir um novo vendedor utilizando os valores das variáveis. Para isso, utilizamos o comando `INSERT INTO` com a tabela `[TABELA DE VENDEDORES]`. Em seguida, podemos declarar ou não os nomes das colunas, mas se não os declararmos, teremos que declarar os valores na ordem natural dessas colunas na tabela.
+<br>
+
+>`SELECT * FROM [TABELA DE VENDEDORES];`<br>
+><br>
+>`DECLARE @MATRICULA VARCHAR(5), @NOME VARCHAR(100), @PERCENTUAL FLOAT;`<br>
+>`DECLARE @DATA DATE, @FERIAS BIT, @BAIRRO VARCHAR(50);`<br>
+><br>
+>`SET @MATRICULA = '00240';`<br>
+>`SET @NOME = 'Cláudia Rodrigues';`<br>
+>`SET @PERCENTUAL = 0.10;`<br>
+>`SET @DATA = '2012-03-12';`<br>
+>`SET @FERIAS = 1;`<br>
+>`SET @BAIRRO = 'Jardins'`<br>
+><br>
+>`PRINT @MATRICULA`<br>
+>`PRINT @NOME`<br>
+>`PRINT @PERCENTUAL`<br>
+>`PRINT @DATA`<br>
+>`PRINT @FERIAS`<br>
+>`PRINT @BAIRRO;`<br>
+><br>
+>`INSERT INTO [TABELA DE VENDEDORES]`<br>
+>`(MATRICULA, NOME, [PERCENTUAL COMISSÃO], [DATA ADMISSÃO], [DE FERIAS], BAIRRO)`<br>
+>`VALUES`<br>
+>`(@MATRICULA, @NOME, @PERCENTUAL, @DATA, @FERIAS, @BAIRRO)`<br>
+><br>
+>`PRINT 'UM VENDEDOR INCLUíDO.'`<br>
+><br>
+>`SET @MATRICULA = '00244';`<br>
+>`SET @NOME = 'Roberto Araujo';`<br>
+><br>
+>`INSERT INTO [TABELA DE VENDEDORES]`<br>
+>`(MATRICULA, NOME, [PERCENTUAL COMISSÃO], [DATA ADMISSÃO], [DE FERIAS], BAIRRO)`<br>
+>`VALUES`<br>
+>`(@MATRICULA, @NOME, @PERCENTUAL, @DATA, @FERIAS, @BAIRRO)`<br>
+><br>
+>`PRINT 'UM VENDEDOR INCLUíDO.'`<br>
