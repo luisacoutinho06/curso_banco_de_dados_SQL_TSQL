@@ -86,3 +86,7 @@ O que faremos, agora, é um comando de inserir um novo vendedor utilizando os va
 
 ***Atribuindo valores a variáveis através de um `SELECT`.***
 ![image](https://github.com/user-attachments/assets/fa6e8ca7-8709-46ed-b739-72f3d1076f73)
+
+
+***Usando funções em comandos print***
+![image](https://github.com/user-attachments/assets/d66e7ebe-72f7-40ff-ac03-0382dc123ee0)
