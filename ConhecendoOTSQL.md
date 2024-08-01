@@ -90,3 +90,38 @@ O que faremos, agora, é um comando de inserir um novo vendedor utilizando os va
 
 ***Usando funções em comandos print***
 ![image](https://github.com/user-attachments/assets/d66e7ebe-72f7-40ff-ac03-0382dc123ee0)
+
+
+***4 - Controle de Fluxo - IF***
+O `T-SQL` por ser uma extensão da linguagem SQL padrão ANSI, possui mais comandos que as regras padrões. Mencionamos anteriormente que as funções de texto, conversão, entre outras, são específicas de cada banco de dados, portanto, cada uma possui uma sintaxe. Isso também acontcece nos comandos de fluxo pois cada banco de dados possui uma implementação.
+
+>O IF<br>
+>No comando IF se uma condição for verdadeira será feita uma ou mais instruções.<br>
+>Sintaxe:<br>
+>`IF <Expressão lógica>`<br>
+>`<sentença SQL ou controle de bloco>`<br>
+
+>O ELSE<br>
+>Eventualmente ele também acompanha o comando ELSE que em português seria o "se não". Ou seja, se em uma condição for verdadeira determinado comando será executado, caso não outro comando será >executado.<br>
+>Sintaxe:<br>
+>`ELSE`<br>
+>`<sentença SQL ou controle de bloco>`<br>
+
+Pela definição, uma expressão lógica é aquela que retorna um valor verdadeiro ou falso. No caso do IF também podemos utilizar comandos SQL, claro, com o mesmo padrão de retorno.
+Vimos anteriormente que controles de bloco são normalmente limitados entre BEGIN e umEND. Isso significa que se depois do IF tivermos que fazer apenas uma instrução não colocamos BEGIN e END, já se for mais de uma sim.
+
+Exemplo 1:
+>`IF @X > 0`<br>
+>`  PRINT @Y;`<br>
+
+Exemplo 2:
+>`IF @X > 0`<br>
+>`    BEGIN`<br>
+>`        PRINT @Y;`<br>
+>`        PRINT @X;`<br>
+>`    END;`<br>
+
+
+***Praticando o IF***
+![image](https://github.com/user-attachments/assets/57fd8e5f-9250-4425-96e2-490d8364e92e)
+Como há o teste e só depois que o comando é executado, dependendo das combinações, nunca teremos erro. Isso significa que o IF aprimorou nosso script.
