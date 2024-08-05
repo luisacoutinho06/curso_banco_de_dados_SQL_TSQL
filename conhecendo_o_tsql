@@ -125,3 +125,9 @@ Exemplo 2:
 ***Praticando o IF***
 ![image](https://github.com/user-attachments/assets/57fd8e5f-9250-4425-96e2-490d8364e92e)
 Como há o teste e só depois que o comando é executado, dependendo das combinações, nunca teremos erro. Isso significa que o IF aprimorou nosso script.
+
+***Controle de fluxo com valores de variáveis***
+Existem vários comandos no SQL, algums deles são:
+
+Neste comando abaixo, estamos pegando a data e a hora exata do computador.
+>`SELECT GETDATE();`
