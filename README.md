@@ -43,6 +43,4 @@ Essa formação proporcionou uma visão aprofundada sobre o **SQL Server 2022**,
 ## 🏆 Minha Experiência
 Durante essa formação, pude consolidar meus conhecimentos em SQL Server e melhorar minhas habilidades práticas em **consultas, administração e otimização de bancos de dados**. Foi uma jornada desafiadora, mas extremamente recompensadora. Agora me sinto ainda mais preparada para enfrentar desafios reais em projetos que envolvem **bancos de dados de alto desempenho**.
 
-![image](https://github.com/user-attachments/assets/22cc6ce9-8fe0-4a15-afdf-6cacfa4c041a)
-
 ---
